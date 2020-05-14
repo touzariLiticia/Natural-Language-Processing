@@ -7,7 +7,7 @@ Created on Thu Feb 13 14:42:45 2020
 """
 from TextRepresenter import *
 import json
-from classes import *
+from classes_TME1 import *
 
 
 #EXERCICE 1

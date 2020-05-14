@@ -7,8 +7,8 @@ Created on Thu Feb 13 17:35:09 2020
 """
 from TextRepresenter import *
 import json
-from classes import *
-
+from classes_TME1 import *
+from classes_TME2 import *
 #EXERCICE 1 
 
 # 1. On interroge l'index direct pour avoir un calcule du score pertinent
@@ -75,17 +75,19 @@ print('Liste de coupes (document-score) ordonnée par score décroissant : ',vec
 """
 
 # Modèle de langue (lissage Jelinek-Mercer))   
-
+"""
 ml=ModeleLangue(w1)
-print('Le score du modèle vectoriel : ',ml.getScores(q))
+print('Le score du modèle de langue : ',ml.getScores(q))
 print('Liste de coupes (document-score) ordonnée par score décroissant : ',ml.getRanking(q)) 
-
+"""
 # Modèle Okapi 
     
+okapi=Okapi(w1)
+print('Le score du modèle Okapi : ',okapi.getScores(q))
+print('Liste de coupes (document-score) ordonnée par score décroissant : ',okapi.getRanking(q))   
+  
     
-    
-    
-    
+# Bonus    
     
     
     
